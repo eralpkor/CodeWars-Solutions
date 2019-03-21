@@ -7,5 +7,7 @@
 // Note: String will have at least one element; words will always be separated by a space.
 
 function addLength(str) {
-  
+  return str.split(' ').map(function(val) {
+    return val + ' ' + val.length;
+  });
 }
